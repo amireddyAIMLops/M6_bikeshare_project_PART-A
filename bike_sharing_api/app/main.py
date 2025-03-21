@@ -53,7 +53,9 @@ if settings.BACKEND_CORS_ORIGINS:
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001) 
+    #uvicorn.run(app, host="0.0.0.0", port=8001)
+    #uvicorn.run(app, host="127.0.0.1", port=8001) #Working
+    uvicorn.run(app, host="localhost", port=8001)
 
     ## localhost--> 127.0.0.0
     ## host --> 0.0.0.0 allows all host
